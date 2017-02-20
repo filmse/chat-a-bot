@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+//@LineMessageHandler
 public class Application {
 
     public static void main(String[] args) {
@@ -21,5 +22,16 @@ class DBManager extends Thread {
 //
 //		});
 //	}
+
+//    @EventMapping
+//    public TextMessage handleTextMessageEvent(MessageEvent<TextMessageContent> event) throws Exception {
+//        System.out.println("event: " + event);
+//        return new TextMessage(event.getMessage().getText());
+//    }
+//
+//    @EventMapping
+//    public void handleDefaultMessageEvent(Event event) {
+//        System.out.println("event: " + event);
+//    }
 
 }

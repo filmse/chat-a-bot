@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class startController {
 
-    @RequestMapping(value = "/", method = RequestMethod.PATCH)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
         return "Greetings from Spring Boot!";
     }
